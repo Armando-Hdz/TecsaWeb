@@ -1,6 +1,6 @@
 <div class="contenedor">
     <div class="logo">
-        <img src="./assets/logo.png" width="500px"><br><br>
+        <img src="./assets/logo.png" class="img-logo"><br><br>
         <span>Diseño de Ingeniería, proyectos, colectores y ventiladores</span>
         <h3>Técnica en Colectores S.A. de C.V.</h3>
     </div>
@@ -9,27 +9,30 @@
             <fieldset>
                 <p class="datospersonales">Datos Personales</p>
                 <label for="">Nombre: </label>
-                <input type="text" name="nombre" id="nombre" class="form-control">
+                <input type="text" name="nombre" id="nombre" class="form-control" required>
                 <label for="">Correo Electrónico: </label>
-                <input type="email" name="correo" id="correo" class="form-control">
+                <input type="email" name="correo" id="correo" class="form-control" required>
                 <br><br>
                 <p class="datosempresa">Datos de la Empresa</p>
                 <label for="">Empresa: </label>
-                <input type="text" name="empresa" id="empresa" class="form-control">
+                <input type="text" name="empresa" id="empresa" class="form-control" required>
                 <label for="">Dirección de Trabajo: </label>
-                <input type="text" name="direccion" id="direccion" class="form-control">
+                <input type="text" name="direccion" id="direccion" class="form-control" required>
                 <label for="">Ciudad: </label>
-                <input type="text" name="ciudad" id="ciudad" class="form-control">
+                <input type="text" name="ciudad" id="ciudad" class="form-control" required>
                 <label for="">Región ó Estado: </label>
-                <input type="text" name="region" id="region" class="form-control">
+                <input type="text" name="region" id="region" class="form-control" required>
                 <label for="">Código Postal: </label>
-                <input type="number" name="cp" id="cp" class="form-control">
+                <input type="number" name="cp" id="cp" class="form-control" min="1" max="99999" required> 
                 <label for="">País: </label>
-                <input type="text" name="pais" id="pais" class="form-control">
+                <input type="text" name="pais" id="pais" class="form-control" required>
                 <br>
                 <label for="">Mensaje: </label>
-                <textarea name="mensaje" id="mensaje" cols="30" rows="10" class="form-control"></textarea>
+                <textarea name="mensaje" id="mensaje" cols="30" rows="10" class="form-control"
+                placeholder="Escribe un Mensaje... "></textarea>
             </fieldset>
+            <br>
+            <button type="submit" class="btn btn-primary">Enviar</button>
         </form>
     </div>
 

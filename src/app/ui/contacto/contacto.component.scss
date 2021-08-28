@@ -13,6 +13,10 @@
     text-align: center;
 }
 
+.img-logo{
+    width: 500px;
+}
+
 .formulario{
     width: 50%;
 
@@ -38,17 +42,21 @@ form{
     //background: #00C9FF;  /* fallback for old browsers */
     //background: -webkit-linear-gradient(to left, #92FE9D, #00C9FF);  /* Chrome 10-25, Safari 5.1-6 */
     //background: linear-gradient(to left, #92FE9D, #00C9FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    
 }
 
 .form-control{
     //background: #04B404;
-    border: 1px solid green;
+    border: 2px solid green;
 }
 
 
-input{
+input, textarea{
     border-radius: 10px;
+}
+
+input:focus, textarea:focus {
+    background: #04b40477;
+    color: white;
 }
 
 span{
@@ -73,4 +81,143 @@ h3{
     background:#f2f2f2;
     border-radius: 8px;
     text-align: center;
+}
+
+button{
+    width: 200px;
+    margin-left: 30%;
+}
+
+/* ************** Estilo Modo Tablet ******************** */
+@media (max-width:768px){
+
+    .contenedor{
+        width: 90%;
+        display:table;
+    }
+    
+    .logo{
+        width: 90%;
+        margin-left: 10%;
+        margin-bottom: 50px;
+        padding-top: 5%;
+        padding-left: 10%;
+        padding-right: 10%;
+        text-align: center;
+    }
+
+    .img-logo{
+        width: 350px;
+    }
+
+    .formulario{
+        width: 90%;
+        margin-left: 10%;
+        margin-top: 20px;
+        padding-top: 1%;
+        padding-left: 0%;
+        padding-bottom: 2%;
+    }
+    
+    form{
+        width:100%;
+        //Estilos del interior del form
+        border: 3px solid green;
+        border-radius: 30px;
+        padding-top: 15px;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-bottom: 15px;
+        background: white;
+        //background: #64FE2E;
+        //background: #00C9FF;  /* fallback for old browsers */
+        //background: -webkit-linear-gradient(to left, #92FE9D, #00C9FF);  /* Chrome 10-25, Safari 5.1-6 */
+        //background: linear-gradient(to left, #92FE9D, #00C9FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+
+}
+
+/* ************** Estilo Modo Telefono ******************** */
+@media (max-width: 420px){
+
+    .contenedor{
+        width: 90%;
+        display:table;
+    }
+    
+    .logo{
+        width: 90%;
+        margin-left: 10%;
+        margin-bottom: 50px;
+        padding-top: 5%;
+        padding-left: 10%;
+        padding-right: 10%;
+        text-align: center;
+    }
+
+    .img-logo{
+        width: 150px;
+    }
+
+    .formulario{
+        width: 85%;
+        margin-left: 15%;
+        margin-top: 20px;
+        padding-top: 1%;
+        padding-left: 0%;
+        padding-bottom: 2%;
+    }
+    
+    form{
+        width:100%;
+        //Estilos del interior del form
+        border: 3px solid green;
+        border-radius: 30px;
+        padding-top: 15px;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-bottom: 15px;
+        background: white;
+        //background: #64FE2E;
+        //background: #00C9FF;  /* fallback for old browsers */
+        //background: -webkit-linear-gradient(to left, #92FE9D, #00C9FF);  /* Chrome 10-25, Safari 5.1-6 */
+        //background: linear-gradient(to left, #92FE9D, #00C9FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+
+    span{
+        font-size: 18px;
+    }
+    
+    h3{
+        font-size: 19px;
+        margin-top: 35px;
+        margin-left: 5%;
+    }
+
+    .datospersonales{
+        font-size: 19px;
+        font-weight: bold;
+        background:#f2f2f2;
+        border-radius: 8px;
+        text-align: center;
+    }
+    
+    .datosempresa {
+        font-size: 19px;
+        font-weight: bold;
+        background:#f2f2f2;
+        border-radius: 8px;
+        text-align: center;
+    }
+
+    label{
+        font-size: 15px;
+        margin-left: 3px;
+    }
+    
+    button{
+        width: 130px;
+        margin-left: 23%;
+    }
+
 }

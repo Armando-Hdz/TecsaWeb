@@ -27,3 +27,25 @@ hi{
 .social a:hover{
   padding: 10px 25px;
 }
+
+img{
+  width: 50px;
+}
+
+/* ************** Estilo Modo Tablet ******************** */
+@media (max-width:768px){
+
+  img{
+    width: 45px;
+  }
+
+}
+
+/* ************** Estilo Modo Telefono ******************** */
+@media (max-width: 420px){
+
+  img{
+    width: 35px;
+  }
+
+}
