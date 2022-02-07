@@ -6,6 +6,9 @@ import { AppComponent } from './app.component';
 import { SharedModule } from './shared/shared.module';
 import { UiModule } from './ui/ui.module';
 
+//Se agrega el modulo para Peticiones HTTP
+import { HttpClientModule } from '@angular/common/http';
+
 @NgModule({
   declarations: [
     AppComponent
@@ -14,7 +17,8 @@ import { UiModule } from './ui/ui.module';
     BrowserModule,
     AppRoutingModule,
     SharedModule,
-    UiModule
+    UiModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
